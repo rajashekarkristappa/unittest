@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+  BeforeInstall: /tmp/unittest
+    - location:
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: /tmp/unittest/
+      timeout: 300
+      runas: root
